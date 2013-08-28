@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    style="@style/BG">
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:src="@drawable/basketball"
+        android:contentDescription="@string/basketball_logo" 
+        style="@style/imageStyle"/>
+    
+    <TextView
+    android:id="@+id/connectedIt"
+	style="@style/netTxt"/>
+    
+    <TextView
+    android:id="@+id/help"
+	android:text="@string/helpTxt"
+	style="@style/introTxt"/>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+ 
+	<Spinner
+    	android:id="@+id/team_spinner"
+   		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" />
+	</LinearLayout>
+
+<Button
+    android:id="@+id/submitBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/submit"/>
+
+<TextView
+    android:id="@+id/dataTxt"
+    style="@style/infoTxt"/>
+
+<TextView
+    android:id="@+id/moreTxt"
+    android:text="@string/moreTxt"
+    style="@style/moreTxtStyle"/>
+
+<Button
+    android:id="@+id/nbaBtn"
+    android:text="@string/nbaBtn"
+    style="@style/buttonStyle"/>
+
+</LinearLayout>
